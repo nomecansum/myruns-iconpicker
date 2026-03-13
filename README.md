@@ -14,6 +14,18 @@ Original project:
 
 This version adapts that work for Font Awesome 7 and Bootstrap 5. Thanks to Victor Valencia Rico for the original component.
 
+Font Awesome 7 is not included in this package. You must load your own Font Awesome 7 assets separately, either through a valid Font Awesome license or your own existing distribution.
+
+## Why This Fork Exists
+
+This fork exists to modernize the original `bootstrap-iconpicker` base for a different stack and icon set.
+
+- Reworked for Font Awesome 7 instead of the older icon packs used by the upstream project
+- Updated for Bootstrap 5 modal behavior and styling
+- Adapted as a standalone package extracted from MyRuns
+- Keeps a familiar API style so migration from the original plugin is straightforward
+- Does not bundle Font Awesome 7 itself; that dependency must be acquired and loaded separately by the integrator
+
 ## Preview
 
 ![MyRuns Icon Picker GIF](docs/media/demo.gif)
@@ -51,7 +63,8 @@ examples/
 
 Important:
 
-- This repository does not ship Font Awesome itself.
+- This repository does not ship Font Awesome 7 itself.
+- You must acquire and load Font Awesome 7 separately from this library.
 - Free families render with Font Awesome Free.
 - `light`, `thin`, and `duotone` require a valid Font Awesome Pro license and assets.
 
@@ -148,6 +161,7 @@ $('#picker').on('change', function (event) {
 - `iconClass` already includes the leading `fa` class.
 - If you pass a full class string to `setIcon()`, the picker detects the icon family automatically.
 - When `dataUrl` is omitted, the plugin resolves `../data/fa7-icons.json` relative to the script file.
+- This package includes picker code and metadata only; Font Awesome 7 files must be installed or licensed separately.
 
 ## Development
 
@@ -162,6 +176,8 @@ This project is derived from `bootstrap-iconpicker v1.10.0` created by Victor Va
 - Original license: MIT
 
 MyRuns Icon Picker modernizes that base for Font Awesome 7, Bootstrap 5, and the MyRuns use case.
+
+Font Awesome 7 remains an external dependency and is not redistributed as part of this repository.
 
 ## License
 
