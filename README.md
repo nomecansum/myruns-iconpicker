@@ -4,6 +4,17 @@ Font Awesome 7 icon picker built with jQuery and Bootstrap modal UI.
 
 It was extracted from MyRuns to work as a small standalone component and keeps a compatible API style with `bootstrap-iconpicker` for common use cases.
 
+Based on `bootstrap-iconpicker v1.10.0` by [Victor Valencia Rico](https://github.com/victor-valencia).
+
+Original project:
+
+- Repository: https://github.com/victor-valencia/bootstrap-iconpicker
+- Repository: [bootstrap-iconpicker](https://github.com/victor-valencia/bootstrap-iconpicker)
+- Author: Victor Valencia Rico
+- Original license: MIT
+
+This version adapts that work for Font Awesome 7 and Bootstrap 5. Thanks to Victor Valencia Rico for the original component.
+
 ## Preview
 
 ![MyRuns Icon Picker GIF](docs/media/demo.gif)
@@ -143,6 +154,18 @@ $('#picker').on('change', function (event) {
 
 Open `examples/basic.html` in a local web server and point the Font Awesome stylesheet to your own assets.
 
+## Credits
+
+This project is derived from `bootstrap-iconpicker v1.10.0` created by Victor Valencia Rico.
+
+- Original repository: [bootstrap-iconpicker](https://github.com/victor-valencia/bootstrap-iconpicker)
+- Original author: Victor Valencia Rico
+- Original license: MIT
+
+MyRuns Icon Picker modernizes that base for Font Awesome 7, Bootstrap 5, and the MyRuns use case.
+
 ## License
 
-GPL-3.0. See the existing `LICENSE` file in the repository root.
+This repository is currently distributed under GPL-3.0. See `LICENSE` for the current repository license.
+
+Note: the upstream project `bootstrap-iconpicker` by Victor Valencia Rico was distributed under MIT.
