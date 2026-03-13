@@ -1,0 +1,191 @@
+/*!
+ * MyRuns Icon Picker v1.0.0
+ * Custom styles for FontAwesome 7 icon picker
+ */
+
+/* Modal customization */
+.myruns-iconpicker-modal .modal-dialog {
+    max-width: 900px;
+}
+
+/* Family selector buttons */
+.myruns-iconpicker-families .btn-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.myruns-iconpicker-families button {
+    flex: 1 1 auto;
+    min-width: 120px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.myruns-iconpicker-families button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.myruns-iconpicker-families button.active {
+    font-weight: 600;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+}
+
+/* Search box */
+.myruns-iconpicker-search {
+    font-size: 14px;
+    padding: 8px 12px;
+}
+
+.myruns-iconpicker-search:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 0 0.2rem rgba(52, 152, 219, 0.25);
+}
+
+/* Icon grid */
+.myruns-iconpicker-grid {
+    max-height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+}
+
+.myruns-iconpicker-grid .row {
+    margin: 0;
+}
+
+/* Icon items */
+.myruns-iconpicker-grid .icon-item {
+    padding: 8px 4px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border: 2px solid #dee2e6;
+    transition: all 0.2s ease;
+}
+
+.myruns-iconpicker-grid .icon-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1;
+}
+
+.myruns-iconpicker-grid .icon-item i {
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: #2c3e50;
+}
+
+.myruns-iconpicker-grid .icon-item small {
+    font-size: 9px;
+    color: #7f8c8d;
+    max-width: 100%;
+}
+
+.myruns-iconpicker-grid .icon-item.btn-warning {
+    background-color: #f39c12;
+    border-color: #e67e22;
+    color: white;
+}
+
+.myruns-iconpicker-grid .icon-item.btn-warning i,
+.myruns-iconpicker-grid .icon-item.btn-warning small {
+    color: white;
+}
+
+.myruns-iconpicker-grid .icon-item.btn-light {
+    background-color: white;
+    border-color: #dee2e6;
+}
+
+/* Pagination */
+.myruns-iconpicker-pagination {
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.myruns-iconpicker-info {
+    font-size: 13px;
+    color: #7f8c8d;
+    font-weight: 500;
+}
+
+/* Scrollbar styling */
+.myruns-iconpicker-grid::-webkit-scrollbar {
+    width: 8px;
+}
+
+.myruns-iconpicker-grid::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.myruns-iconpicker-grid::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.myruns-iconpicker-grid::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+/* Input with icon preview */
+.iconpicker-preview {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .myruns-iconpicker-modal .modal-dialog {
+        max-width: 95%;
+        margin: 10px auto;
+    }
+    
+    .myruns-iconpicker-families button {
+        min-width: 90px;
+        font-size: 12px;
+    }
+    
+    .myruns-iconpicker-grid {
+        max-height: 300px;
+    }
+    
+    .myruns-iconpicker-grid .icon-item {
+        height: 70px;
+        padding: 8px 4px;
+    }
+    
+    .myruns-iconpicker-grid .icon-item i {
+        font-size: 20px;
+    }
+}
+
+/* Empty state */
+.myruns-iconpicker-grid .alert {
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Loading state */
+.myruns-iconpicker-loading {
+    text-align: center;
+    padding: 40px;
+    color: #7f8c8d;
+}
+
+.myruns-iconpicker-loading i {
+    font-size: 32px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
