@@ -8,7 +8,6 @@ Based on `bootstrap-iconpicker v1.10.0` by [Victor Valencia Rico](https://github
 
 Original project:
 
-- Repository: https://github.com/victor-valencia/bootstrap-iconpicker
 - Repository: [bootstrap-iconpicker](https://github.com/victor-valencia/bootstrap-iconpicker)
 - Author: Victor Valencia Rico
 - Original license: MIT
