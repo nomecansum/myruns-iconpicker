@@ -4,6 +4,12 @@ Font Awesome 7 icon picker built with jQuery and Bootstrap modal UI.
 
 It was extracted from MyRuns to work as a small standalone component and keeps a compatible API style with `bootstrap-iconpicker` for common use cases.
 
+## Preview
+
+![MyRuns Icon Picker GIF](docs/media/demo.gif)
+
+![MyRuns Icon Picker Screenshot](docs/media/screenshot-modal.png)
+
 ## Features
 
 - Font Awesome 7 dataset included as JSON metadata
