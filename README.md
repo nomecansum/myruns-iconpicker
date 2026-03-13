@@ -14,7 +14,10 @@ Original project:
 
 This version adapts that work for Font Awesome 7 and Bootstrap 5. Thanks to Victor Valencia Rico for the original component.
 
-Font Awesome 7 is not included in this package. You must load your own Font Awesome 7 assets separately, either through a valid Font Awesome license or your own existing distribution.
+> [!WARNING]
+> Font Awesome 7 is not included in this package.
+> You must acquire and load Font Awesome 7 separately when integrating this library.
+> Free families can work with Font Awesome Free, but `light`, `thin`, and `duotone` require a valid Font Awesome Pro license.
 
 ## Why This Fork Exists
 
